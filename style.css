@@ -1,0 +1,197 @@
+/* Disclaimer i dont know much about gradien webkit etc thats why i done that particular part by seeing it and along with that i also try to understand for suture purpose */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.portfolio-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  gap: 3.5rem;
+  height: 12vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.35rem;
+  position: relative;
+}
+
+.left-container,
+.right-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.left-container {
+  background-color: #262525;
+  width: 70%;
+  padding-left: 3rem;
+}
+
+.right-container {
+  background: linear-gradient(#262525, #3877ff);
+  width: 30%;
+}
+
+.icon .fa-brands,
+.fa-solid {
+  color: #bbb;
+  font-size: 2.3rem;
+}
+
+.left-container .icon .white .fa-brands:hover {
+  font-size: 2.3rem;
+  transition: 0.5s ease-in-out;
+  background: linear-gradient(#262525, #bbb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.left-container .icon .red .fa-brands:hover {
+  font-size: 2.3rem;
+  transition: 0.5s ease-out;
+  background: linear-gradient(#f9ce34, #ee2a7b, #6228d7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icon .fa-brands:hover {
+  font-size: 2.3rem;
+  transition: 0.5s ease-in-out;
+  background: linear-gradient(#fff, #5db9ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icon .fa-solid:hover {
+  font-size: 2.3rem;
+  transition: 0.5s ease-in;
+  background: linear-gradient(#fff, #262525);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  cursor: pointer;
+}
+
+.fa-solid:hover {
+  transform: scale(1.3);
+  transition: 0.5s ease-in-out;
+}
+
+.fa-brands:hover {
+  transform: scale(1.3);
+  transition: 0.5s ease-in-out;
+}
+
+.btn1,
+.btn2,
+.btn3 {
+  cursor: pointer;
+  margin-top: 1.1rem;
+}
+
+.content {
+  margin-left: 4rem;
+}
+
+.content .intro {
+  font-size: 1.87rem;
+  color: white;
+}
+
+.content h1 {
+  font-size: 4rem;
+  color: #5db9ee;
+}
+
+.content span {
+  color: #5db9ee;
+}
+
+.content .detail {
+  font-size: 1.1rem;
+  color: white;
+  line-height: 1.8rem;
+}
+
+.btn .btn1,
+.btn2,
+.btn3{
+  border: 0.1rem solid #5db9ee;
+  font-size: 0.94rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: 0.4s ease-in-out;
+}
+.btn1{
+  background-color: #5db9ee;
+}
+
+.btn2,.btn3 {
+  background: transparent;
+  color: #5db9ee;
+  margin-left: 1rem;
+}
+
+.btn1:hover {
+  background-color: transparent;
+  color: #5db9ee;
+  transform: scale(1.12);
+}
+
+.btn3:hover{
+    background-color:transparent;
+    color:#fff;
+    transform: scale(1.12);
+  }
+
+.btn2:hover {
+  color: black;
+  background-color: #5db9ee;
+  transform: scale(1.12);
+}
+
+.navbar li a:after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 0.1rem;
+  left: 0;
+  bottom: -5px;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.64s;
+}
+
+.navbar li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
